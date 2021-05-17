@@ -18,11 +18,24 @@ public class Teacher {
     }
 
 
+    // Returns the name of the Teacher.
     public String getName(){
         return this.name;
     }
 
+    // Returns the ID of the Teacher.
     public int getId(){
-        return
+        return id;
+    }
+
+    // Returns the Salary of the Teacher.
+    public int getSalary(){
+        return salary;
+    }
+
+
+    // Sets the salary of the teacher.
+    public void setSalary(int salary){
+        this.salary = salary;
     }
 }

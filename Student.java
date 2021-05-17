@@ -34,4 +34,35 @@ public class Student {
     public void updateFeesPaid(int fees){
         feesPaid += fees;
     }
+
+    // Generated Getters Below for Attributes.
+    // Getters are used to protect your data.
+    // They help with Encapsulation.
+
+    // Returns the ID.
+    public int getId() {
+        return id;
+    }
+
+    // Returns the Name.
+    public String getName() {
+        return name;
+    }
+
+    // Returns the Grade.
+    public int getGrade() {
+        return grade;
+    }
+
+    // Returns the Fees Paid.
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
+    // Returns the fees total.
+    public int getFeesTotal() {
+        return feesTotal;
+    }
+
+
 }

@@ -31,7 +31,7 @@ public class Student {
     // So they want a var to keep adding the fees to feespaid
     // The school is going to receive the funds.
 
-    public void updateFeesPaid(int fees){
+    public void payFees(int fees){
         feesPaid += fees;
     }
 
@@ -63,6 +63,11 @@ public class Student {
     public int getFeesTotal() {
         return feesTotal;
     }
+
+    public int getRemainingFees(){
+        feesTotal - feesPaid;
+    }
+
 
 
 }

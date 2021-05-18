@@ -76,8 +76,16 @@ public class School {
         totalMoneyEarned += MoneyEarned;
     }
 
+
+//    // Returns the total money spent by the school.
+//    public int getTotalMoneySpent() {
+//        return totalMoneySpent;
+//    }
+
     // Setter for the total money spent.
-    public void setTotalMoneySpent(int totalMoneySpent) {
-        this.totalMoneySpent = totalMoneySpent;
+    // Update the money that is spent by the school.
+    // Which is the salary given by the school to it's teachers.
+    public void updateTotalMoneySpent(int moneySpent) {
+        totalMoneyEarned -= moneySpent;
     }
 }

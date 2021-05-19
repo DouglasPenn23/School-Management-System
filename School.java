@@ -9,8 +9,8 @@ public class School {
     private List<Teacher> teachers;
     // Creates a list of students.
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
 
     // Constructor for our School

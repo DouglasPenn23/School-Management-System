@@ -28,9 +28,35 @@ public class Main {
 
         // Creates the school.
         School oakHarborHighSchool = new School(teacherList, studentList);
-        System.out.println("Oak Harbor High School has earned: $" + oakHarborHighSchool.getTotalMoneyEarned());
+//        System.out.println("Oak Harbor High School has earned: $" + oakHarborHighSchool.getTotalMoneyEarned());
 
 
+        // Makes Jimmy Pay fees.
         jimmy.payFees(5000);
+        System.out.println("Oak Harbor High School has earned: $" + oakHarborHighSchool.getTotalMoneyEarned()
+                + " after " + jimmy.getName() +"'s payment");
+        timmy.payFees(6000);
+        System.out.println("Oak Harbor High School has earned: $" + oakHarborHighSchool.getTotalMoneyEarned()
+                + " after " + timmy.getName() +"'s payment");
+
+
+        System.out.println("------- Making School Pay Salary --------");
+
+        // Receives Salary for Garrett & Reports.
+        garrett.receiveSalary(garrett.getSalary());
+        System.out.println("School has paid salary to Teacher: " + garrett.getName()
+                + " and now has: $" + oakHarborHighSchool.getTotalMoneyEarned());
+
+
+        // Receives Salary for Jack & Reports.
+        jack.receiveSalary(jack.getSalary());
+        System.out.println("School has paid salary to Teacher: " + jack.getName()
+                + " and now has: $" + oakHarborHighSchool.getTotalMoneyEarned());
+
+        // Receives Salary for Monique & Reports.
+        monique.receiveSalary(monique.getSalary());
+        System.out.println("School has paid salary to Teacher: " + monique.getName()
+                + " and now has: $" + oakHarborHighSchool.getTotalMoneyEarned());
+
     }
 }

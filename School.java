@@ -70,7 +70,7 @@ public class School {
     // Setter for our total money earned.
     // Changed from set to update
 
-    public void updateTotalMoneyEarned(int MoneyEarned) {
+    public static void updateTotalMoneyEarned(int MoneyEarned) {
         // Similar to student fees paid case.
         // It keeps adding to itself as money is earned.
         totalMoneyEarned += MoneyEarned;
@@ -85,7 +85,7 @@ public class School {
     // Setter for the total money spent.
     // Update the money that is spent by the school.
     // Which is the salary given by the school to it's teachers.
-    public void updateTotalMoneySpent(int moneySpent) {
+    public static void updateTotalMoneySpent(int moneySpent) {
         totalMoneyEarned -= moneySpent;
     }
 }

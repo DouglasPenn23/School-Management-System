@@ -6,6 +6,7 @@ public class Teacher {
     private int id;
     private String name;
     private int salary;
+    private int salaryEarned;
 
 
     // There will be different salaries for each teacher
@@ -14,7 +15,7 @@ public class Teacher {
         this.id = id;
         this.name = name;
         this.salary = salary;
-
+        this.salaryEarned = 0;
     }
 
 
@@ -37,5 +38,13 @@ public class Teacher {
     // Sets the salary of the teacher.
     public void setSalary(int salary){
         this.salary = salary;
+    }
+
+    // Adds to the salary
+    // Removes from the total money earned from the school.
+    public void receiveSalary(int salary){
+
+        salaryEarned += salary;
+        School.updateTotalMoneySpent(salary);
     }
 }

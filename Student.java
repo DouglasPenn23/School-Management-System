@@ -21,7 +21,6 @@ public class Student {
 
     public void setGrade(int grade){
         this.grade=grade;
-
     }
 
     // This method is going to
